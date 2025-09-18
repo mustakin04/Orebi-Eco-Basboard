@@ -7,6 +7,7 @@ import { RouterProvider } from "react-router/dom";
 import Home from "./pages/Home";
 import CreateCategory from "./component/CreateCategory";
 import CategoryList from "./component/CategoryList";
+import Product from "./component/product";
 function App() {
   const router = createBrowserRouter([
   {
@@ -15,7 +16,8 @@ function App() {
     children: [
       // { index: true, Component: Home },
       { path: "/", Component: CreateCategory },
-      {path:"/categoryList",Component:CategoryList}
+      {path:"/categoryList",Component:CategoryList},
+      {path:"/product",Component:Product}
     ],
   },
 ]);
