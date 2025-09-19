@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import CreateCategory from "./component/CreateCategory";
 import CategoryList from "./component/CategoryList";
 import Product from "./component/product";
+import Registration from "./pages/Registration";
+import Login from "./pages/Login";
 function App() {
   const router = createBrowserRouter([
   {
@@ -17,9 +19,19 @@ function App() {
       // { index: true, Component: Home },
       { path: "/", Component: CreateCategory },
       {path:"/categoryList",Component:CategoryList},
-      {path:"/product",Component:Product}
+      {path:"/product",Component:Product},
+      
     ],
   },
+  {
+    path:"/registration",
+    element:<Registration></Registration>
+  },
+  {
+    path:"/login",
+    element:<Login></Login>
+  }
+
 ]);
   return (
     <>
